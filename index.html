@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="DevStart: aprenda HTML, CSS, estrutura de arquivos e ambientes de desenvolvimento com exemplos e desafios interativos.">
+  <title>DevStart | Laboratório de HTML e CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="DevStart página inicial">
+      <span class="brand-icon">&lt;/&gt;</span>
+      <span>Dev<span class="brand-accent">Start</span><small>LABORATÓRIO DIGITAL</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#inicio">Início</a>
+      <a href="#ambiente">Ambiente</a>
+      <a href="#estrutura">Arquivos</a>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a class="nav-cta" href="#desafio">Fazer o quiz <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> SUA JORNADA COMEÇA AQUI</div>
+        <h1>Transforme ideias<br>em <span class="gradient-text">experiências digitais.</span></h1>
+        <p class="hero-description">
+          Descubra como os sites são construídos, conheça as ferramentas
+          de desenvolvimento e aprenda HTML e CSS na prática.
+        </p>
+        <div class="hero-actions">
+          <a href="#ambiente" class="button button-primary">Começar a aprender <span>→</span></a>
+          <a href="#desafio" class="button button-secondary">Testar meus conhecimentos</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>03</strong><span>módulos de estudo</span></div>
+          <div><strong>06+</strong><span>exemplos práticos</span></div>
+          <div><strong>01</strong><span>desafio final</span></div>
+        </div>
+      </div>
+
+      <div class="code-window" aria-label="Exemplo de código HTML">
+        <div class="window-bar">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>meu-primeiro-site.html</span>
+          <span class="window-label">HTML</span>
+        </div>
+        <div class="code-content">
+          <div class="code-line"><span class="line-number">01</span><span class="code-purple">&lt;!DOCTYPE html&gt;</span></div>
+          <div class="code-line"><span class="line-number">02</span><span class="code-purple">&lt;html</span> <span class="code-green">lang</span>=<span class="code-yellow">"pt-BR"</span><span class="code-purple">&gt;</span></div>
+          <div class="code-line"><span class="line-number">03</span><span class="indent code-purple">&lt;head&gt;</span></div>
+          <div class="code-line"><span class="line-number">04</span><span class="indent-2 code-purple">&lt;title&gt;</span>Meu site<span class="code-purple">&lt;/title&gt;</span></div>
+          <div class="code-line"><span class="line-number">05</span><span class="indent code-purple">&lt;/head&gt;</span></div>
+          <div class="code-line"><span class="line-number">06</span><span class="indent code-purple">&lt;body&gt;</span></div>
+          <div class="code-line"><span class="line-number">07</span><span class="indent-2 code-purple">&lt;h1&gt;</span><span class="code-white">Olá, mundo!</span><span class="code-purple">&lt;/h1&gt;</span></div>
+          <div class="code-line"><span class="line-number">08</span><span class="indent-2 code-purple">&lt;p&gt;</span><span class="code-white">Meu primeiro site.</span><span class="code-purple">&lt;/p&gt;</span></div>
+          <div class="code-line"><span class="line-number">09</span><span class="indent code-purple">&lt;/body&gt;</span></div>
+          <div class="code-line"><span class="line-number">10</span><span class="code-purple">&lt;/html&gt;</span></div>
+          <div class="code-cursor"></div>
+        </div>
+        <div class="code-footer"><span><i class="status-dot"></i> Tudo pronto para criar</span><span>UTF-8</span></div>
+      </div>
+
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+    </section>
+
+    <section class="learning-strip">
+      <div><span class="strip-icon html-icon">5</span><span><strong>HTML</strong><small>Estrutura</small></span></div>
+      <span class="strip-plus">+</span>
+      <div><span class="strip-icon css-icon">✳</span><span><strong>CSS</strong><small>Estilo</small></span></div>
+      <span class="strip-plus">=</span>
+      <div><span class="strip-icon web-icon">↗</span><span><strong>WEB</strong><small>Experiência</small></span></div>
+    </section>
+
+    <section class="section content-section" id="ambiente">
+      <div class="section-heading">
+        <div class="eyebrow">MÓDULO 01 · PRIMEIROS PASSOS</div>
+        <h2>Prepare seu <span class="gradient-text">ambiente.</span></h2>
+        <p>Antes de programar, conheça as ferramentas que ajudam você a transformar código em páginas web.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon purple">⌨</div>
+          <span class="card-number">01 / EDITOR</span>
+          <h3>Editor de código</h3>
+          <p>É onde você escreve, organiza e modifica o código do seu projeto. Um editor pode destacar a sintaxe e ajudar a encontrar erros.</p>
+          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="text-link">Conhecer o VS Code ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon cyan">◉</div>
+          <span class="card-number">02 / NAVEGADOR</span>
+          <h3>Navegador web</h3>
+          <p>Interpreta o HTML e o CSS para mostrar a página. Também oferece ferramentas para inspecionar elementos e investigar problemas.</p>
+          <a href="https://developer.chrome.com/docs/devtools/" target="_blank" rel="noopener noreferrer" class="text-link">Conhecer DevTools ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon pink">⌘</div>
+          <span class="card-number">03 / PROJETO</span>
+          <h3>Arquivos organizados</h3>
+          <p>Separar estrutura, estilos, scripts e imagens torna o projeto mais fácil de entender, manter e atualizar.</p>
+          <a href="#estrutura" class="text-link">Ver a estrutura ↗</a>
+        </article>
+      </div>
+
+      <div class="tip-banner">
+        <div class="tip-icon">✦</div>
+        <div><strong>Dica para começar</strong><p>Você pode criar e editar os arquivos pelo próprio GitHub no navegador. Não precisa instalar um editor para acompanhar este laboratório.</p></div>
+      </div>
+    </section>
+
+    <section class="section content-section section-alt" id="estrutura">
+      <div class="section-heading">
+        <div class="eyebrow">MÓDULO 02 · ORGANIZAÇÃO</div>
+        <h2>Uma estrutura que <span class="gradient-text">faz sentido.</span></h2>
+        <p>Organize os arquivos para cada parte do site ter sua própria responsabilidade.</p>
+      </div>
+
+      <div class="structure-layout">
+        <div class="file-tree">
+          <div class="tree-header"><span>▤</span> MEU-PROJETO <span class="tree-branch">main</span></div>
+          <div class="tree-item tree-root"><span class="tree-folder">▾</span> devstart/</div>
+          <div class="tree-item indent-tree"><span class="tree-folder">▾</span> css/</div>
+          <div class="tree-item indent-tree-2"><span class="file-css">#</span> style.css <span class="tree-tag">ESTILOS</span></div>
+          <div class="tree-item indent-tree"><span class="tree-folder">▾</span> js/</div>
+          <div class="tree-item indent-tree-2"><span class="file-js">JS</span> app.js <span class="tree-tag">INTERAÇÃO</span></div>
+          <div class="tree-item indent-tree"><span class="tree-folder">▾</span> assets/</div>
+          <div class="tree-item indent-tree-2"><span class="file-img">▧</span> images/ <span class="tree-tag">IMAGENS</span></div>
+          <div class="tree-item"><span class="file-html">5</span> index.html <span class="tree-tag">PÁGINA</span></div>
+          <div class="tree-item"><span class="file-md">M</span> README.md <span class="tree-tag">DOCUMENTAÇÃO</span></div>
+          <div class="tree-footer"><span class="status-dot"></span> 5 arquivos e pastas de exemplo</div>
+        </div>
+
+        <div class="structure-info">
+          <article><span class="file-badge html-badge">HTML</span><div><h3>index.html</h3><p>É a página principal. Define os conteúdos, títulos, textos, links e a organização dos elementos.</p></div></article>
+          <article><span class="file-badge css-badge">CSS</span><div><h3>style.css</h3><p>Controla as cores, fontes, tamanhos, espaçamentos, posicionamento e adaptação para diferentes telas.</p></div></article>
+          <article><span class="file-badge js-badge">JS</span><div><h3>app.js</h3><p>Adiciona comportamentos, como abrir o menu, validar respostas e calcular a pontuação do quiz.</p></div></article>
+          <article><span class="file-badge img-badge">IMG</span><div><h3>assets/images/</h3><p>Guarda as imagens do projeto, deixando os recursos visuais organizados em uma pasta própria.</p></div></article>
+        </div>
+      </div>
+
+      <div class="code-example">
+        <div class="example-heading"><div><span class="eyebrow">NA PRÁTICA</span><h3>Conectando HTML e CSS</h3></div><span class="language-pill">HTML</span></div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Meu projeto&lt;/title&gt;
+  &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Meu primeiro projeto&lt;/h1&gt;
+  &lt;p&gt;Estrutura e estilo trabalhando juntos.&lt;/p&gt;
+  &lt;script src="js/app.js" defer&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <div class="example-note"><span>ⓘ</span> Os caminhos em <code>href</code> e <code>src</code> devem corresponder aos nomes e pastas reais do projeto.</div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="html">
+      <div class="section-heading">
+        <div class="eyebrow">MÓDULO 03 · ESTRUTURA</div>
+        <h2>Conheça o <span class="html-gradient">HTML.</span></h2>
+        <p>HTML é uma linguagem de marcação que organiza o conteúdo de uma página web.</p>
+      </div>
+
+      <div class="tag-layout">
+        <div class="tag-list">
+          <button class="tag-item active" data-tag="h1"><span>&lt;h1&gt;</span><span>Título principal</span><span>→</span></button>
+          <button class="tag-item" data-tag="p"><span>&lt;p&gt;</span><span>Parágrafo</span><span>→</span></button>
+          <button class="tag-item" data-tag="a"><span>&lt;a&gt;</span><span>Link</span><span>→</span></button>
+          <button class="tag-item" data-tag="img"><span>&lt;img&gt;</span><span>Imagem</span><span>→</span></button>
+          <button class="tag-item" data-tag="ul"><span>&lt;ul&gt;</span><span>Lista</span><span>→</span></button>
+          <button class="tag-item" data-tag="button"><span>&lt;button&gt;</span><span>Botão</span><span>→</span></button>
+        </div>
+
+        <div class="tag-demo">
+          <div class="demo-header"><span>VISUALIZAÇÃO</span><span class="demo-live"><i class="status-dot"></i> AO VIVO</span></div>
+          <div class="browser-preview">
+            <div class="browser-top"><span></span><span></span><span></span><div>meu-site.com</div></div>
+            <div class="browser-page" id="tag-preview">
+              <h1>Olá, desenvolvedor!</h1>
+              <p>Este é um título criado com HTML.</p>
+            </div>
+          </div>
+          <div class="tag-explanation">
+            <span class="language-pill">HTML</span>
+            <h3 id="tag-title">Título principal</h3>
+            <p id="tag-description">A tag h1 representa o título principal da página. Em geral, cada página deve ter um título principal claro.</p>
+            <pre id="tag-code"><code>&lt;h1&gt;Olá, desenvolvedor!&lt;/h1&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section section-alt" id="css">
+      <div class="section-heading">
+        <div class="eyebrow">MÓDULO 04 · DESIGN</div>
+        <h2>Dê vida com <span class="css-gradient">CSS.</span></h2>
+        <p>Experimente mudar as propriedades e veja como os estilos transformam a aparência do conteúdo.</p>
+      </div>
+
+      <div class="playground">
+        <div class="playground-controls">
+          <div class="playground-title"><span class="css-symbol">✳</span><div><h3>CSS Playground</h3><p>Personalize seu cartão</p></div></div>
+          <label for="color-picker">Cor de fundo</label>
+          <div class="color-options">
+            <button class="color-choice selected" data-color="#7c3aed" style="--swatch:#7c3aed" aria-label="Roxo"></button>
+            <button class="color-choice" data-color="#0891b2" style="--swatch:#0891b2" aria-label="Azul"></button>
+            <button class="color-choice" data-color="#db2777" style="--swatch:#db2777" aria-label="Rosa"></button>
+            <button class="color-choice" data-color="#059669" style="--swatch:#059669" aria-label="Verde"></button>
+          </div>
+          <label for="radius-range">Arredondamento <output id="radius-value">20px</output></label>
+          <input id="radius-range" type="range" min="0" max="40" value="20">
+          <label for="padding-range">Espaçamento interno <output id="padding-value">24px</output></label>
+          <input id="padding-range" type="range" min="12" max="48" value="24">
+          <button class="button button-secondary reset-playground" id="reset-playground">Restaurar padrão ↺</button>
+        </div>
+        <div class="playground-stage">
+          <span class="stage-label">PRÉVIA DO RESULTADO</span>
+          <article class="live-card" id="live-card">
+            <div class="live-card-icon">&lt;/&gt;</div>
+            <span class="live-card-label">MEU PRIMEIRO COMPONENTE</span>
+            <h3>Olá, mundo!</h3>
+            <p>Com HTML e CSS, você pode transformar uma estrutura simples em uma experiência visual.</p>
+            <button type="button" id="demo-button">Meu botão</button>
+          </article>
+          <div class="css-property"><span>background-color</span><strong id="background-value">#7c3aed</strong></div>
+          <div class="css-property"><span>border-radius</span><strong id="radius-code">20px</strong></div>
+          <div class="css-property"><span>padding</span><strong id="padding-code">24px</strong></div>
+        </div>
+      </div>
+
+      <div class="concept-grid">
+        <article class="concept-card"><span class="concept-number">01</span><h3>Seletores</h3><p>Identificam quais elementos receberão os estilos.</p><code>h1 { color: white; }</code></article>
+        <article class="concept-card"><span class="concept-number">02</span><h3>Propriedades</h3><p>Definem características visuais dos elementos.</p><code>font-size: 32px;</code></article>
+        <article class="concept-card"><span class="concept-number">03</span><h3>Responsividade</h3><p>Adapta o layout a celulares, tablets e computadores.</p><code>@media (max-width: 768px)</code></article>
+      </div>
+    </section>
+
+    <section class="section content-section" id="desafio">
+      <div class="section-heading">
+        <div class="eyebrow">MISSÃO FINAL · TESTE SEU CONHECIMENTO</div>
+        <h2>Chegou a hora do <span class="gradient-text">desafio.</span></h2>
+        <p>Responda às perguntas e descubra quanto você aprendeu sobre HTML, CSS e organização de projetos.</p>
+      </div>
+
+      <div class="quiz-container" id="quiz-container">
+        <div class="quiz-top"><span class="quiz-label">DEVSTART QUIZ</span><span id="question-counter">PERGUNTA 1 DE 6</span></div>
+        <div class="progress-track"><div class="progress-fill" id="quiz-progress"></div></div>
+        <div id="quiz-question-area">
+          <h3 id="question-text">Qual é a principal função do HTML?</h3>
+          <div class="answer-list" id="answer-list"></div>
+          <p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p>
+          <div class="quiz-actions"><button class="button button-secondary" id="restart-quiz">Recomeçar</button><button class="button button-primary" id="next-question" disabled>Próxima pergunta →</button></div>
+        </div>
+        <div class="quiz-result" id="quiz-result" hidden>
+          <div class="result-medal" id="result-medal">✦</div>
+          <span class="eyebrow">RESULTADO FINAL</span>
+          <h3 id="result-title">Muito bem!</h3>
+          <p id="result-description"></p>
+          <div class="score-display"><strong id="score-value">0/6</strong><span>respostas corretas</span></div>
+          <button class="button button-primary" id="play-again">Tentar novamente ↻</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-banner section">
+      <div class="closing-decoration">&lt;/&gt;</div>
+      <div><span class="eyebrow">SEU PRÓXIMO PASSO</span><h2>Todo grande projeto começa<br>com uma primeira linha.</h2><p>Continue praticando. Seu próximo site pode começar hoje.</p></div>
+      <a href="#inicio" class="button button-primary">Voltar ao início ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-icon">&lt;/&gt;</span><span>Dev<span class="brand-accent">Start</span><small>LABORATÓRIO DIGITAL</small></span></a>
+    <p>Um projeto educativo para aprender os fundamentos do desenvolvimento web.</p>
+    <span class="footer-copy">HTML · CSS · JAVASCRIPT © 2026</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
